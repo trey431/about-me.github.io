@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<title> About Me </title>
+
+	<link rel ="stylesheet" type="text/css" href="TreytonPowell_formstyles.css">
+	<script type="text/javascript" src="TreytonPowell_formjs.js"></script>
+	
+	<!--Last Updated: March 29, 2025 11:49 AM-->
+</head>
+
+<body>
+	<div id="center"><h1>About Me</h1></div>
+	<div id="center"><img src="logo-big.png" alt="ECU Logo"></div>
+
+	<nav>
+		<h3>Page Navigation</h3>
+		<ul>
+			<li><h4><a href="#aboutme">About Me</a></h4></li>
+			<li><h4><a href="#classes">Classes</a></h4></li>
+			<li><h4><a href="#hobbies">Hobbies</a></h4></li>
+		</ul>
+	</nav>
+
+	<hr>
+
+	<section id="aboutme">
+		<p><b>My name is Treyton.</b><br />
+		<i>My major is Computer Science.</i><br />
+		<img src="matrix.jpeg" alt="matrix numbers"><br />
+		<u>I am a Junior.</u><br /></p>
+	</section>
+
+	<hr>
+	
+	<section id="classes">
+	<div class="container">
+		<section id="internetprogramming">
+		<div class="grid-1">
+		<h2>Internet Programming</h2>
+		<p>We're currently learning how to apply CSS to our About Me HTML pages.</p>
+		</div>
+		</section>
+
+		<section id="datastructures">
+		<div class="grid-2">
+		<h2>Data Structures</h2>
+		<p>I've already finished the class, but we were going over alogrithms in C.</p>
+		</div>
+		</section>
+		
+		<section id="worldwarii">
+		<div class="grid-3">
+		<h2>World War II</h2>
+		<p>We're currently learning about the war in the pacific.</p>
+		</div>
+		</section>
+		
+		<section id="regionalgeography">
+		<div class="grid-4">
+		<h2>Regional Geography</h2>
+		<p>We're just learned about the Middle East and Africa</p>
+		</div>
+		</section>
+		
+	</div>
+	</section>
+	
+	<br><br>
+	<hr>
+	<br>
+	<div align="center">
+	<h1>JavaScript and Forms Examples</h1>
+	</div>	
+		
+
+	<div class="container">
+		<div class="grid-5">
+		<section id="arithmetic">
+		<h2>Arithmetic</h2>
+		<p>Perform Basic Arithmetic.</p>
+
+		<form name="ArithmeticForm">
+		<label>First Number:</label>
+			<input type="number" name="firstarithmeticnumber"
+			placeholder="1"/>
+		<br>
+		<label>Second Number:</label>
+			<input type="number" name="secondarithmeticnumber"
+			placeholder="2"/>
+		<br>
+		<br>
+		<legend>Select Operator:</legend><br>
+			<input type="radio" id="addition" name="arithmeticoperator" 
+			value="Addition" checked>
+				<label for="addition">Addition</label><br>
+			<input type="radio" id="subtraction" name="arithmeticoperator" 
+			value="Subtraction">
+				<label for="addition">Subtraction</label><br>
+			<input type="radio" id="multiplication" name="arithmeticoperator" 
+			value="Multiplication">
+				<label for="addition">Multiplication</label><br>
+			<input type="radio" id="division" name="arithmeticoperator" 
+			value="Division">
+				<label for="addition">Division</label><br>
+		<br>
+		<button type="button" onclick="performArithmetic()">Calculate
+		</button>
+		</form>
+
+		</section>
+		</div>
+
+		<div class="grid-6">
+		<section id="factorial">
+		<h2>Factorial</h2>
+		<p>Find Factorial of a Number.</p>
+
+		<form name="FactorialForm">
+		<label>Enter Number:</label>
+			<input type="number" name="factorialnumber" placeholder="1">
+		<br>
+		<button type="button" onclick="performFactorial()">Calculate</button>
+		</form>
+
+		</section>
+		</div>
+
+		<div class="grid-7">
+		<section id="fibonacci">
+		<h2>Calculate Nth Fibonacci Number.</h2>
+		<p>Use script to generate all/odd/even numbers up to selection.</p>
+
+		<form name="FibonacciForm">
+		<label>Enter Number:</label>
+			<input type="number" name="fibonaccinumber" placeholder="1">
+		<br>
+		<button type="button" onclick="performFibonacci()">Calculate</button>
+		</form>
+
+		</section>
+		</div>
+
+		<div class="grid-8">
+		<section id="range">
+		<h2>Find the Range</h2>
+		<p>Use script to produce range of two numbers.</p>
+		<br>
+		<form name="RangeForm">
+		<label>First Number:</label>
+			<input type="number" name="num1" placeholder="1">
+		<br>
+		<label>Second Number:</label>
+			<input type="number" name="num2" placeholder="2">
+		<br>
+		<label>Third Number:</label>
+			<input type="number" name="num3" placeholder="3">
+		<br>
+		<br>
+		<button type="button" onclick="performRange()">Calculate</button>
+		</form>
+
+		</section>
+		</div>
+
+		<div class="grid-9">
+		<section id="signupform">
+		<h2>Join Our Mailing List</h2>
+		<p>We'd Love to Update You On Our Offering!</p>
+		<br>
+
+		<form name="SignupForm">
+		<label>First Name:</label>
+			<input type="text" name="firstname" placeholder="Jane">
+		<br>
+		<label>Last Name:</label>
+			<input type="text" name="lastname" placeholder="Doe">
+		<br>
+		<label>Email:</label>
+			<input type="email" name="email" placeholder="jane.doe@gmail.com"/>
+		<br>
+		<label>ZIP Code:</label>
+			<input type="number" name="ZIP" placeholder="12345"/>
+		<br>
+		<br>
+
+		<button type="button" onclick="addSignup()">Sign Me Up</button>
+		<button type="reset">Reset</button>
+		</form>
+
+		</section>
+		</div>
+	</div>
+	
+	<br>
+	<div id="signupList"></div>
+	
+	<br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<hr>
+	<br>
+
+	<section id="hobbies">
+		<h2>My hobbies are:</h2>
+			<ul><li>Brazilian Jiu-Jitsu</li>
+			<li>Videogames</li>
+			<iframe 
+				width="560" 
+				height="315" 
+				src="https://www.youtube.com/embed/YWuwvfTfONc?si=9njQfaRExRMoEET_" 
+				title="YouTube video player" 
+				frameborder="0" 
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; 				gyroscope; picture-in-picture; web-share" 
+				referrerpolicy="strict-origin-when-cross-origin" 
+				allowfullscreen></iframe>
+			<li>Weightlifting</li></ul>
+	</section>
+
+	<hr>
+
+	<div id="center"><h3><a href="http://ecok.edu"> ECU Homepage </a></h3></div>
+</body>
+</html>
